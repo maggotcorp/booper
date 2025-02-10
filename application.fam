@@ -12,5 +12,5 @@ App(
     fap_author="@RocketGod-git",
     fap_description="Jammer for Flipper Zero",
     fap_icon="icons/jammer_icon.png",
-    fap_weburl="",
+    fap_weburl="https://github.com/maggotcorp/booper",
 )
