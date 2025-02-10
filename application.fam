@@ -1,8 +1,10 @@
 App(
     appid="jammer_app",
     name="booper",
-    apptype=FlipperAppType.APP,
+    apptype=FlipperAppType.MENUEXTERNAL,
+    targets=["f7"],
     entry_point="jammer_app",
+    icon="A_NFC_14",
     requires=["gui", "subghz", "furi"],
     cdefines=["APP_JAMMER"],
     stack_size=2 * 1024,
