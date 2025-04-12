@@ -8,7 +8,7 @@
 #include <lib/subghz/subghz_tx_rx_worker.h>
 #include "helpers/radio_device_loader.h"
 
-#define TAG "JammerApp"
+#define TAG "BooperApp"
 #define SUBGHZ_FREQUENCY_MIN 300000000
 #define SUBGHZ_FREQUENCY_MAX 928000000
 #define MESSAGE_MAX_LEN 1024
@@ -18,7 +18,7 @@ static FuriHalRegion unlockedRegion = {
     .bands_count = 3,
     .bands = {
         {.start = 299999755, .end = 348000000, .power_limit = 20, .duty_cycle = 50},
-        {.start = 386999938, .end = 464000000, .power_limit = 20, .duty_cycle = 50},
+        {.start = 386999938, .end = 470000000, .power_limit = 25, .duty_cycle = 50},
         {.start = 778999847, .end = 928000000, .power_limit = 20, .duty_cycle = 50},
     },
 };
@@ -30,7 +30,7 @@ typedef struct {
 
 static const FrequencyBand valid_frequency_bands[] = {
     {300000000, 348000000},
-    {387000000, 464000000},
+    {387000000, 470000000},
     {779000000, 928000000},
 };
 
@@ -364,8 +364,8 @@ static void jammer_splash_screen_draw_callback(Canvas* canvas, void* context) {
     }
 
     canvas_set_font(canvas, FontPrimary);
-    canvas_draw_str_aligned(canvas, 64, 15, AlignCenter, AlignTop, "RF Jammer");
-    canvas_draw_str_aligned(canvas, 64, 35, AlignCenter, AlignTop, "by RocketGod");
+    canvas_draw_str_aligned(canvas, 64, 15, AlignCenter, AlignTop, "RF Booper");
+    canvas_draw_str_aligned(canvas, 64, 35, AlignCenter, AlignTop, "Modified by Bim");
     canvas_draw_frame(canvas, 0, 0, 128, 64);
 }
 

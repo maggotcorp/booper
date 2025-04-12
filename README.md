@@ -1,25 +1,6 @@
-# RF Jammer App by RocketGod ☠️📡
+# RF Booper App modified by Bim ☠️📡
 
-This **RF Jammer App** for the Flipper Zero, made by **RocketGod**, is a powerful tool for jamming across multiple radio frequencies and modulation schemes. Below is an in-depth look at each mode, from its technical details to the real-world impact of its jamming strategy.
-
-## 🎥 Internal CC1101 Demonstration
-https://github.com/user-attachments/assets/4a34bc73-d419-480e-bb87-90216eb8a1e0
-## 🎥 External CC1101 Demonstration
-https://github.com/user-attachments/assets/1053ec27-a15f-4313-9257-2360135c5e96
-## 🎥 Modulation Modes
-https://github.com/user-attachments/assets/77970e50-d46f-4d59-bbb0-6e2624a98127
-
-
-## 🧪 Car Fob in Controlled Lab Test (-28dBm)
-![car_fob](https://github.com/user-attachments/assets/35cdb9c7-fcbe-4fdf-a10e-9e020a504f6f)
-## 🧪 Community .sub files in Controlled Lab Test (-8dBm narrow)
-![jammer_sub_files](https://github.com/user-attachments/assets/a2ad93ae-4e08-4af8-97cc-5ec85f9759a4)
-## 🧪 RF Jammer App and Internal CC1101/Antenna in Controlled Lab Test (-8dBm wide)
-![rocketgod_jammer_app](https://github.com/user-attachments/assets/6ed6bb9b-2379-491c-9a69-845695de2542)
-## 🧪 RF Jammer App and External CC1101/Antenna Flux Capacitor by Rabbit Labs (10dBm) [TinySA Ultra hard wired w/25W attenuator]
-![External_Flux-Capacitor_Rabbit-Labs](https://github.com/user-attachments/assets/63e7a4d8-1584-425b-8113-9495a6041836)
-
-https://github.com/user-attachments/assets/53a3123e-b749-4af6-b542-e1784b131084
+This **RF Booper App** for the Flipper Zero, made by **RocketGod**, is a powerful tool for booping across multiple radio frequencies and modulation schemes. Below is an in-depth look at each mode, from its technical details to the real-world impact of its strategy.
 
 ## 📡 External CC1101 Notes
 - **To use an external CC1101, attach it to the GPIO before starting the app.**
@@ -29,7 +10,7 @@ https://github.com/user-attachments/assets/53a3123e-b749-4af6-b542-e1784b131084
 
 The app supports multiple frequency bands, ensuring compliance with the ranges handled by the Flipper's sub-GHz radio:
 - **Band 1**: 300 MHz – 348 MHz
-- **Band 2**: 387 MHz – 464 MHz
+- **Band 2**: 387 MHz – 470 MHz
 - **Band 3**: 779 MHz – 928 MHz
 
 You can adjust frequencies with **precision**:
@@ -113,9 +94,7 @@ Each jamming mode is implemented as a distinct modulation scheme and data patter
 - **Pattern**: Periodic bursts of high (`0xFF`) data with pauses in between.
 - **Mechanism**: Sends intense pulses followed by intervals, creating an effect similar to packetized data.
 - **Impact**: Effective against burst-based communication systems by mimicking valid data bursts, which can confuse or overload the receiver's data handling.
-
 ---
-
 ## 💣 Controls
 
 - **Up/Down Buttons**: Modify the currently selected digit in the frequency.
@@ -126,5 +105,3 @@ Each jamming mode is implemented as a distinct modulation scheme and data patter
 ---
 
 **Disclaimer**: This app is intended for educational and research purposes by experienced RF users. Ensure compliance with local regulations before using this tool.
-
-![rocketgod_logo](https://github.com/RocketGod-git/shodanbot/assets/57732082/7929b554-0fba-4c2b-b22d-6772d23c4a18)
